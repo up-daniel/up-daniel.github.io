@@ -9,9 +9,9 @@ github：https://github.com/5iux/sou
 github：https://github.com/yeetime/sou2
 日期：2019-12-13
 ========================================
-由 imsyy 二次修改
+由 up-daniel 二次修改
 github：https://github.com/imsyy/sou2
-日期：2022-03-10
+日期：2024-05-20
 */
 
 // 默认搜索引擎列表
@@ -25,18 +25,19 @@ var se_list_preinstall = {
     },
     '2': {
         id: 2,
+        title: "谷歌",
+        url: "https://www.google.com/search",
+        name: "q",
+        icon: "iconfont icon-google",
+    }, 
+    '3': {
+        id: 3,
         title: "必应",
         url: "https://cn.bing.com/search",
         name: "q",
         icon: "iconfont icon-bing",
     },
-    '3': {
-        id: 3,
-        title: "谷歌",
-        url: "https://www.google.com/search",
-        name: "q",
-        icon: "iconfont icon-google",
-    },
+
     '4': {
         id: 4,
         title: "搜狗",
@@ -78,20 +79,6 @@ var se_list_preinstall = {
         url: "https://search.bilibili.com/all",
         name: "keyword",
         icon: "iconfont icon-bilibilidonghua",
-    },
-    '10': {
-        id: 10,
-        title: "淘宝",
-        url: "https://s.taobao.com/search",
-        name: "q",
-        icon: "iconfont icon-taobao",
-    },
-    '11': {
-        id: 11,
-        title: "京东",
-        url: "https://search.jd.com/Search",
-        name: "keyword",
-        icon: "iconfont icon-jingdong",
     }
 };
 
@@ -177,7 +164,7 @@ function getSeDefault() {
 
 //背景图片
 var bg_img_preinstall = {
-    "type": "2", // 1:使用主题默认的背景图片 2:关闭背景图片 3:使用自定义的背景图片
+    "type": "1", // 1:使用主题默认的背景图片 2:关闭背景图片 3:使用自定义的背景图片
     "path": "", //自定义图片
 };
 
